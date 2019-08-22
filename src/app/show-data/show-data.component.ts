@@ -14,6 +14,7 @@ export class ShowDataComponent implements OnInit {
   constructor(private http:Http) { }
 
   ngOnInit() {
+    console.log("DATA COMPONENT")
   	this.req = this.http.get(this.url).subscribe(data => {
       console.log(data.json())
       this.data = data.json() as [any]

@@ -7,12 +7,14 @@ import { ShowDataComponent } from './show-data/show-data.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowDataComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    DashboardComponent
   ],
   imports: [
     HttpModule,

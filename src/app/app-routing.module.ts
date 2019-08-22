@@ -3,10 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ShowDataComponent } from './show-data/show-data.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
-      path:"",
+    path:"",
+    component: DashboardComponent,
+  },
+  {
+      path:"data",
       component: ShowDataComponent,
   },
   {
