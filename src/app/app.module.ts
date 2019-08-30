@@ -9,6 +9,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatSelectModule} from '@angular/material/select';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     HttpModule,
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
