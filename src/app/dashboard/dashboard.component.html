@@ -1,9 +1,12 @@
 <h4>Basic mat-select</h4>
 <mat-form-field>
   <mat-label>State</mat-label>
-  <mat-select>
+  <mat-select  [(ngModel)]="selectedStateId" name="State" (ngModelChange)="getParks()">
     <mat-option *ngFor="let state of states" [value]="state.id">
       {{state.state_name}}
     </mat-option>
   </mat-select>
 </mat-form-field>
+<p>Selected State {{selectedStateId}}</p>
+<p>Parks</p>
+<p *ngFor="let park of parks">{{park.national_park_name}}</p>
