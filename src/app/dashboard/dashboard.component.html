@@ -9,4 +9,11 @@
 </mat-form-field>
 <p>Selected State {{selectedStateId}}</p>
 <p>Parks</p>
-<p *ngFor="let park of parks">{{park.national_park_name}}</p>
+
+<mat-tab-group dynamicHeight>
+        <mat-tab *ngFor="let park of parks" [label]="park.national_park_name">
+                <div class="example-large-box mat-elevation-z4">
+                        {{park.national_park_name}}
+                </div>
+        </mat-tab>
+</mat-tab-group>
